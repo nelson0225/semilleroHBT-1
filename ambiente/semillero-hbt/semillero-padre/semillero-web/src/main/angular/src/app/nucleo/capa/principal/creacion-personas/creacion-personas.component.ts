@@ -1,18 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-
+import { modeloPersona } from './modelo/modelo-persona';
 @Component({
   selector: 'app-creacion-personas',
   templateUrl: './creacion-personas.component.html'
 })
 export class CreacionPersonasComponent implements OnInit {
-  
-  public header : string = 'Crear personas';
-  public id : number = 1;
-  public nombre : string = 'Juan';
-  public apellidos : string = 'Perez';
-  public tipoIdentificacion : string = 'cedula';
-  public formHidden : boolean = false;
-  
+  public persona: modeloPersona;
+  public personas: modeloPersona[];
+ 
   constructor() { }
 
   ngOnInit() {

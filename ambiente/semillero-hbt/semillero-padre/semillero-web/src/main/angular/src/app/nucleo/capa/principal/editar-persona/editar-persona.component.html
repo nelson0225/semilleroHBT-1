@@ -1,9 +1,9 @@
-<h2>Crear persona</h2>
+<h2>Editar persona</h2>
 <form>
     <div style="width:50%; float:left;">
         <label for="tipoIdentificacion">Tipo identificación: </label>
         <br>
-        <select name="tipoIdentificacion">
+        <select name="tipoIdentificacion" disabled>
             <option value="cedula">Cédula</option>
             <option value="tarjetaIdentidad">Tarjeta identidad</option>
             <option value="pasaporte">Pasaporte</option>
@@ -44,7 +44,7 @@
     <div style="width:50%; float:left;">
         <label for="numberId">Número identificación: </label>
         <br>
-        <input name="numberId" type="text"  placeholder="Número identificación" />
+        <input name="numberId" type="text"  placeholder="Número identificación" disabled/>
         <br>
         <br>
         <label for="apellidos">Apellidos: </label>
@@ -73,5 +73,3 @@
     </div>
     
 </form>
-
-
